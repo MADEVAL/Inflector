@@ -32,12 +32,17 @@ return function(Inflections $inflect) {
 	->plural('/í([sn])$/i', 'i\1es')
 	->plural('/ó([sn])$/i', 'o\1es')
 	->plural('/ú([sn])$/i', 'u\1es')
+	->plural('/^((?i)m)es$/', '\1eses')
+	->plural('/jer/', 'jeres')
 
 	->singular('/s$/', '')
 	->singular('/es$/', '')
+	->singular('/([sfj]e)s$/', '\1')
 	->singular('/ces$/', 'z')
 	->singular('/iones$/', 'ión')
 	->singular('/ereses$/', 'erés')
+	->singular('/^((?i)m)eses$/', '\1es')
+	->singular('/jeres$/', 'jer')
 
 	->irregular('el', 'los')
 	->irregular('lunes', 'lunes')
@@ -47,6 +52,7 @@ return function(Inflections $inflect) {
 	->irregular('mamá', 'mamás')
 	->irregular('sofá', 'sofás')
 	// because 'mes' is considered already a plural
-	->irregular('mes', 'meses');
+//	->irregular('mes', 'meses')
+	;
 };
 //@codeCoverageIgnoreEnd

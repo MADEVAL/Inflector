@@ -9,6 +9,8 @@ return array
 	'chico' => 'chicos',
 	'señora' => 'señoras',
 	'radio' => 'radios',
+	'casa' => 'casas',
+	'perro' => 'perros',
 
 	# If a noun ends in a consonant, make it plural by adding -es
 
@@ -21,6 +23,9 @@ return array
 	'sociedad' => 'sociedades',
 	'azul' => 'azules',
 	'mes' => 'meses',
+	'árbol' => 'árboles',
+	'álbum' => 'álbumes',
+	'mujer' => 'mujer',
 
 	# If a noun ends in -ión, add -es and drop the written accent
 
@@ -47,5 +52,10 @@ return array
 	#
 
 	'ley' => 'leyes',
-	'café' => 'cafés'
+	'café' => 'cafés',
+	'mequetrefe' => 'mequetrefes',
+	'pasaje' => 'pasajes',
+	'fase' => 'fases',
+	'pez' => 'peces',
+
 );
